@@ -33,4 +33,4 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     console.error('Error serving random image:', error)
     return res.status(500).json({ error: 'Failed to serve random image' })
   }
-}
+} 
