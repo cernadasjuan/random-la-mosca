@@ -5,7 +5,7 @@ import path from 'path'
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
     // Get all files from the images directory
-    const imagesDir = path.join(process.cwd(), 'api/images')
+    const imagesDir = path.join(process.cwd(), 'public/images')
     const files = fs.readdirSync(imagesDir).filter(file =>
       file.toLowerCase().endsWith('.jpg') ||
       file.toLowerCase().endsWith('.jpeg') ||
